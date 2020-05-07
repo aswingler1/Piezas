@@ -42,44 +42,44 @@ TEST(PiezasTest, pieceAtTest)
 
 }
 
-// TEST(PiezasTest, dropPieceTest)
-// {
+TEST(PiezasTest, dropPieceTest)
+{
 
-// 	Piezas obj;
-// 	obj.reset();
-
-
-// 	obj.dropPiece(0);
-// 	obj.dropPiece(1);
-// 	obj.dropPiece(2);
-// 	obj.dropPiece(3);
-// 	ASSERT_TRUE(obj.pieceAt(0,0) != Blank);
-// 	ASSERT_TRUE(obj.pieceAt(0,1) != Blank);
-// 	ASSERT_TRUE(obj.pieceAt(0,2) != Blank);
-// 	ASSERT_TRUE(obj.pieceAt(0,3) != Blank);
-
-// 	obj.dropPiece(0);
-// 	obj.dropPiece(1);
-// 	obj.dropPiece(2);
-// 	obj.dropPiece(3);
-// 	ASSERT_TRUE(obj.pieceAt(1,0) != Blank);
-// 	ASSERT_TRUE(obj.pieceAt(1,1) != Blank);
-// 	ASSERT_TRUE(obj.pieceAt(1,2) != Blank);
-// 	ASSERT_TRUE(obj.pieceAt(1,3) != Blank);
-
-// 	obj.dropPiece(0);
-// 	obj.dropPiece(1);
-// 	obj.dropPiece(2);
-// 	obj.dropPiece(3);
-// 	ASSERT_TRUE(obj.pieceAt(2,0) != Blank);
-// 	ASSERT_TRUE(obj.pieceAt(2,1) != Blank);
-// 	ASSERT_TRUE(obj.pieceAt(2,2) != Blank);
-// 	ASSERT_TRUE(obj.pieceAt(2,3) != Blank);
+	Piezas obj;
+	obj.reset();
 
 
-// 	// out of bounds check
-// 	ASSERT_TRUE(obj.pieceAt(5,0) == Invalid);
-// 	ASSERT_TRUE(obj.pieceAt(0,5) == Invalid);
-// 	ASSERT_TRUE(obj.pieceAt(5,5) == Invalid);
+	obj.dropPiece(0);
+	obj.dropPiece(1);
+	obj.dropPiece(2);
+	obj.dropPiece(3);
+	ASSERT_TRUE(obj.pieceAt(0,0) != Blank);
+	ASSERT_TRUE(obj.pieceAt(0,1) != Blank);
+	ASSERT_TRUE(obj.pieceAt(0,2) != Blank);
+	ASSERT_TRUE(obj.pieceAt(0,3) != Blank);
 
-// }
+	obj.dropPiece(0);
+	obj.dropPiece(1);
+	obj.dropPiece(2);
+	obj.dropPiece(3);
+	ASSERT_TRUE(obj.pieceAt(1,0) != Blank);
+	ASSERT_TRUE(obj.pieceAt(1,1) != Blank);
+	ASSERT_TRUE(obj.pieceAt(1,2) != Blank);
+	ASSERT_TRUE(obj.pieceAt(1,3) != Blank);
+
+	obj.dropPiece(0);
+	obj.dropPiece(1);
+	obj.dropPiece(2);
+	obj.dropPiece(3);
+	ASSERT_TRUE(obj.pieceAt(2,0) != Blank);
+	ASSERT_TRUE(obj.pieceAt(2,1) != Blank);
+	ASSERT_TRUE(obj.pieceAt(2,2) != Blank);
+	ASSERT_TRUE(obj.pieceAt(2,3) != Blank);
+
+
+	// out of bounds check
+	ASSERT_TRUE(obj.pieceAt(5,0) == Invalid);
+	ASSERT_TRUE(obj.pieceAt(0,5) == Invalid);
+	ASSERT_TRUE(obj.pieceAt(5,5) == Invalid);
+
+}
