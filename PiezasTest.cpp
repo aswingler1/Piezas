@@ -39,6 +39,16 @@ TEST(PiezasTest, pieceAtTest)
 	ASSERT_TRUE(obj.pieceAt(0,2) == Blank);
 	ASSERT_TRUE(obj.pieceAt(0,3) == Blank);
 
+
+}
+
+TEST(PiezasTest, dropPieceTest)
+{
+
+	Piezas obj;
+	obj.reset();
+
+
 	obj.dropPiece(0);
 	obj.dropPiece(1);
 	obj.dropPiece(2);
@@ -71,8 +81,5 @@ TEST(PiezasTest, pieceAtTest)
 	ASSERT_TRUE(obj.pieceAt(5,0) == Invalid);
 	ASSERT_TRUE(obj.pieceAt(0,5) == Invalid);
 	ASSERT_TRUE(obj.pieceAt(5,5) == Invalid);
-
-
-
 
 }
