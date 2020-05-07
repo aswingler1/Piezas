@@ -20,10 +20,19 @@ TEST(PiezasTest, sanityCheck)
 }
 
 
-TEST(PiezasTest, reset_test)
+// TEST(PiezasTest, reset_test)
+// {
+// 	Piezas obj;
+// 	obj.reset();
+
+// 	ASSERT_TRUE(board[1][1] == Blank);
+// }
+
+
+TEST(PiezasTest, pieceAtTest)
 {
 	Piezas obj;
 	obj.reset();
-
-	ASSERT_TRUE(board[1][1] == Blank);
+	obj.dropPiece(1);
+	ASSERT_TRUE(obj.pieceAt(0,1) != Blank);
 }
