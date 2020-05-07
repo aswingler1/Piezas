@@ -18,3 +18,11 @@ TEST(PiezasTest, sanityCheck)
 {
 	ASSERT_TRUE(true);
 }
+
+
+TEST(PiezasTest, reset)
+{
+	Piezas obj;
+	obj.reset()
+	ASSERT_TRUE(board[1][1] = Blank);
+}
