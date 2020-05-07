@@ -37,7 +37,7 @@ TEST(PiezasTest, pieceAtTest)
 	ASSERT_TRUE(obj.pieceAt(0,0) == Blank);
 	ASSERT_TRUE(obj.pieceAt(0,1) == Blank);
 	ASSERT_TRUE(obj.pieceAt(0,2) == Blank);
-	ASSERT_EQ(obj.pieceAt(0,3), Blank);
+	ASSERT_TRUE(obj.pieceAt(0,3) == Blank);
 
 
 }
