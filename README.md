@@ -1,5 +1,11 @@
 # Piezas
 
+# Badges:
+[![Coverage Status](https://coveralls.io/repos/github/aswingler1/Piezas/badge.svg?branch=master)](https://coveralls.io/github/aswingler1/Piezas?branch=master)
+
+[![Build Status](https://travis-ci.org/aswingler1/Piezas.svg?branch=master)](https://travis-ci.org/aswingler1/Piezas)
+
+
 ## Associated Enumerated Types
 `Piece` has four possible values: `X`,`O`,`Invalid`, and `Blank`
 
