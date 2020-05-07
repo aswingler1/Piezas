@@ -25,5 +25,5 @@ TEST(PiezasTest, reset_test)
 	Piezas obj;
 	obj.reset();
 
-	ASSERT_EQ(board[1][1] == Blank);
+	ASSERT_TRUE(board[1][1] == Blank);
 }
