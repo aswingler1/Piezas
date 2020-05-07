@@ -23,6 +23,6 @@ TEST(PiezasTest, sanityCheck)
 TEST(PiezasTest, reset)
 {
 	Piezas obj;
-	obj.reset()
+	obj.reset();
 	ASSERT_TRUE(board[1][1] = Blank);
 }
