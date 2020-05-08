@@ -61,7 +61,7 @@ Piezas::Piezas()
 	// 	cout << endl;
 	// }
 	// cout << endl;
-	
+	turn = X;
 }
 
 /**
