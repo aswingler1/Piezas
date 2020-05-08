@@ -78,8 +78,10 @@ TEST(PiezasTest, dropPieceTest)
 
 }
 
-TEST(PiezasTest, dropPieceOutOfBoundsTest)
+TEST(PiezasTest, checkPieceOutOfBoundsTest)
 {
+	Piezas obj;
+	obj.reset();	
 
 	ASSERT_TRUE(obj.pieceAt(5,0) == Invalid);
 	ASSERT_TRUE(obj.pieceAt(0,5) == Invalid);
@@ -87,5 +89,30 @@ TEST(PiezasTest, dropPieceOutOfBoundsTest)
 
 }
 
+
+TEST(PiezasTest, dropPieceOutOfBoundsTest)
+{
+	Piezas obj;
+	obj.reset();	
+
+	obj.dropPiece(5);
+	ASSERT_TRUE(obj.pieceAt(0,5) == Invalid);
+
+}
+
+Test(PiezasTest, dropPieceInFullColumn)
+{
+
+	Piezas obj;
+	obj.reset();
+
+	ASSERT_TRUE(obj.dropPiece(2) == X);
+	ASSERT_TRUE(obj.dropPiece(2) == O);
+	ASSERT_TRUE(obj.dropPiece(2) == X);
+	ASSERT_TRUE(obj.dropPiece(2) == Blank);
+
+	
+
+}
 
 
