@@ -289,9 +289,3 @@ Piece Piezas::gameState()
 		return Blank;
 }
 
-
-int main(){
-
-	
-	return 0;
-}
