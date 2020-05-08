@@ -76,10 +76,16 @@ TEST(PiezasTest, dropPieceTest)
 	ASSERT_TRUE(obj.pieceAt(2,2) != Blank);
 	ASSERT_TRUE(obj.pieceAt(2,3) != Blank);
 
+}
 
-	// out of bounds check
+TEST(PiezasTest, dropPieceOutOfBoundsTest)
+{
+
 	ASSERT_TRUE(obj.pieceAt(5,0) == Invalid);
 	ASSERT_TRUE(obj.pieceAt(0,5) == Invalid);
 	ASSERT_TRUE(obj.pieceAt(5,5) == Invalid);
 
 }
+
+
+
