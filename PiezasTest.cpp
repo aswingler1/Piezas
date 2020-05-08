@@ -106,7 +106,7 @@ TEST(PiezasTest, dropPieceInFullColumn)
 	Piezas obj;
 	obj.reset();
 
-	ASSERT_TRUE(obj.dropPiece(2) == (char)88);
+	ASSERT_TRUE((char)obj.dropPiece(2) == (char)88);
 	ASSERT_TRUE((char)obj.dropPiece(2) == 'O');
 	ASSERT_TRUE((char)obj.dropPiece(2) == X);
 	ASSERT_TRUE((char)obj.dropPiece(2) == Blank);
