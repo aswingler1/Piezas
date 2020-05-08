@@ -134,6 +134,9 @@ TEST(PiezasTest, gameStateInvalidTest)
 TEST(PiezasTest, gameStateTieTest)
 {
 
+	Piezas obj;
+	obj.reset();
+
 	obj.dropPiece(0);
 	obj.dropPiece(1);
 	obj.dropPiece(0);
