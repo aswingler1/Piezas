@@ -113,4 +113,25 @@ TEST(PiezasTest, dropPieceInFullColumn)
 	ASSERT_TRUE(obj.dropPiece(2) == Blank);
 }
 
+TEST(PiezasTest, gameStateTest)
+{
+
+	Piezas obj;
+	obj.reset();
+
+	// X wins in column one
+	obj.dropPiece(0);
+	obj.dropPiece(1);
+	obj.dropPiece(0);
+	obj.dropPiece(1);
+	obj.dropPiece(0);
+	ASSERT_TRUE(obj.gameState() == X)
+
+
+
+
+
+}
+
+
 
