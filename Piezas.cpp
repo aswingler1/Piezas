@@ -251,7 +251,7 @@ Piece Piezas::gameState()
 	}
 
 
-	// add up all Y lines
+	// add up all O lines
 	if(board[2][0] == O && board[2][1] == O && board[2][2] == O && board[2][3] == O)
 	{
 		oLines++;

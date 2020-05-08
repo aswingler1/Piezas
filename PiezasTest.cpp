@@ -119,13 +119,13 @@ TEST(PiezasTest, gameStateTest)
 	Piezas obj;
 	obj.reset();
 
-	// X wins in column one
+	// board not full. Invalid
 	obj.dropPiece(0);
 	obj.dropPiece(1);
 	obj.dropPiece(0);
 	obj.dropPiece(1);
 	obj.dropPiece(0);
-	ASSERT_TRUE(obj.gameState() == X);
+	ASSERT_TRUE(obj.gameState() == Invalid);
 
 
 
