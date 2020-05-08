@@ -39,7 +39,14 @@ TEST(PiezasTest, pieceAtTest)
 	ASSERT_TRUE(obj.pieceAt(0,2) == Blank);
 	ASSERT_TRUE(obj.pieceAt(0,3) == Blank);
 
+}
 
+TEST(PiezasTest, pieceAtOutOfBoundsTest)
+{
+	Piezas obj;
+	obj.reset();
+
+	ASSERT_TRUE(obj.pieceAt(5,5) == Invalid);
 }
 
 TEST(PiezasTest, dropPieceTest)
