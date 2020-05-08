@@ -113,7 +113,7 @@ TEST(PiezasTest, dropPieceInFullColumn)
 	ASSERT_TRUE(obj.dropPiece(2) == Blank);
 }
 
-TEST(PiezasTest, gameStateTest)
+TEST(PiezasTest, gameStateInvalidTest)
 {
 
 	Piezas obj;
@@ -128,9 +128,25 @@ TEST(PiezasTest, gameStateTest)
 	ASSERT_TRUE(obj.gameState() == Invalid);
 
 
+}
 
 
+TEST(PiezasTest, gameStateTieTest)
+{
 
+	obj.dropPiece(0);
+	obj.dropPiece(1);
+	obj.dropPiece(0);
+	obj.dropPiece(1);
+	obj.dropPiece(0);
+	obj.dropPiece(1);
+	obj.dropPiece(2);
+	obj.dropPiece(3);
+	obj.dropPiece(2);
+	obj.dropPiece(3);
+	obj.dropPiece(2);
+	obj.dropPiece(3);
+	ASSERT_TRUE(obj.gameState() == Blank)
 }
 
 
