@@ -78,6 +78,7 @@ void Piezas::reset()
 			board[row][col] = Blank;
 		}
 	}
+	GLOBAL_TURN = 'X';
 }
 
 /**
