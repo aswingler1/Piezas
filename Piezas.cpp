@@ -32,17 +32,7 @@ Piezas::Piezas()
 	for (int i = 0; i < 3; i++)
 		board[i].resize(3);
 
-	// for(int row = 2; row >= 0; row--)
-	// {
-	// 	for(int col = 0; col <= 3; col++)
-	// 	{
-	// 		cout<<"["<<row<<","<<col<<"]";
-	// 	}
-	// 	cout<<endl;
-	// }
-
-
-
+	
 
 	for(int row = 2; row >= 0; row--)
 	{
@@ -52,15 +42,6 @@ Piezas::Piezas()
 		}
 	}
 
-	// for(int row = 2; row >= 0 ; row--)
-	// {
-	// 	for(int col = 0; col <= 3; col++)
-	// 	{
-	// 		cout << (char)board[row][col];
-	// 	}
-	// 	cout << endl;
-	// }
-	// cout << endl;
 	turn = X;
 }
 
@@ -190,19 +171,6 @@ Piece Piezas::pieceAt(int row, int column)
 **/
 Piece Piezas::gameState()
 {
-
-	// print out the board
-	// for(int row = 2; row >= 0 ; row--)
-	// {
-	// 	for(int col = 0; col <= 3; col++)
-	// 	{
-	// 		cout << (char)board[row][col];
-	// 	}
-	// 	cout << endl;
-	// }
-	// cout << endl;
-
-
 
 	//board not filled. return invalid
 	for(int row = 2; row >= 0 ; row--)
