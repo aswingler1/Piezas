@@ -129,7 +129,6 @@ TEST(PiezasTest, gameStateInvalidTest)
 	Piezas obj;
 	obj.reset();
 
-	// board not full. Invalid
 	obj.dropPiece(0);
 	obj.dropPiece(1);
 	obj.dropPiece(0);
