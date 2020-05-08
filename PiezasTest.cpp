@@ -105,6 +105,9 @@ TEST(PiezasTest, dropPieceOutOfBoundsTest)
 	obj.dropPiece(5);
 	ASSERT_TRUE(obj.pieceAt(0,5) == Invalid);
 
+	obj.dropPiece(6);
+	ASSERT_TRUE(obj.pieceAt(0,6) == Invalid);
+
 }
 
 TEST(PiezasTest, dropPieceInFullColumn)
