@@ -5,7 +5,6 @@
 
 using namespace std;
 
-char GLOBAL_TURN = 'X';
 
 /** CLASS Piezas
  * Class for representing a Piezas vertical board, which is roughly based
@@ -78,7 +77,7 @@ void Piezas::reset()
 			board[row][col] = Blank;
 		}
 	}
-	GLOBAL_TURN = 'X';
+	turn = X;
 }
 
 /**
@@ -95,66 +94,66 @@ Piece Piezas::dropPiece(int column)
 	if(column > 3 || column < 0)
 	{
 		//switch turns on error
-		if(GLOBAL_TURN == 'X')
-			GLOBAL_TURN = 'O';
+		if(turn == X)
+			turn = O;
 		else
-			GLOBAL_TURN = 'X';
+			turn = X;
 
 		return Blank;
 	}
 
 	if(board[0][column] == Blank)
 	{
-		if(GLOBAL_TURN == 'X')
+		if(turn == X)
 		{
 			board[0][column] = X;
-			GLOBAL_TURN = 'O';
+			turn = O;
 			return X;
 		}
-		else if(GLOBAL_TURN == 'O')
+		else if(turn == O)
 		{
 			board[0][column] = O;
-			GLOBAL_TURN = 'X';
+			turn = X;
 			return O;
 		}
 	}
 	else if(board[1][column] == Blank)
 	{
-		if(GLOBAL_TURN == 'X')
+		if(turn == X)
 		{
 			board[1][column] = X;
-			GLOBAL_TURN = 'O';
+			turn = O;
 			return X;
 		}
-		else if(GLOBAL_TURN == 'O')
+		else if(turn == O)
 		{
 			board[1][column] = O;
-			GLOBAL_TURN = 'X';
+			turn = X;
 			return O;
 		}
 	}
 	else if(board[2][column] == Blank)
 	{
-		if(GLOBAL_TURN == 'X')
+		if(turn == X)
 		{
 			board[2][column] = X;
-			GLOBAL_TURN = 'O';
+			turn = O;
 			return X;
 		}
-		else if(GLOBAL_TURN == 'O')
+		else if(turn == O)
 		{
 			board[2][column] = O;
-			GLOBAL_TURN = 'X';
+			turn = X;
 			return O;
 		}
 	}
 	else //column is full
 	{
 		//switch turns on error
-		if(GLOBAL_TURN == 'X')
-			GLOBAL_TURN = 'O';
+		if(turn == X)
+			turn = O;
 		else
-			GLOBAL_TURN = 'X';
+			turn = X;
 
 		return Blank;
 	}
