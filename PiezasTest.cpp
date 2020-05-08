@@ -125,7 +125,7 @@ TEST(PiezasTest, gameStateTest)
 	obj.dropPiece(0);
 	obj.dropPiece(1);
 	obj.dropPiece(0);
-	ASSERT_TRUE(obj.gameState() == X)
+	ASSERT_TRUE(obj.gameState() == X);
 
 
 
