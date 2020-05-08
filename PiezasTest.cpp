@@ -110,6 +110,7 @@ TEST(PiezasTest, dropPieceInFullColumn)
 	ASSERT_TRUE(obj.dropPiece(2) == X);
 	ASSERT_TRUE(obj.dropPiece(2) == O);
 	ASSERT_TRUE(obj.dropPiece(2) == Blank);
+	ASSERT_TRUE(obj.dropPiece(2) == Blank);
 }
 
 
