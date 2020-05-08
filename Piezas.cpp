@@ -210,7 +210,7 @@ Piece Piezas::gameState()
 	{
 		for(int col = 0; col <= 3; col++)
 		{
-			if((char)board[row][col] != X || (char)board[row][col] != O)
+			if((char)board[row][col] == Blank)
 			{
 				return Invalid;
 			}

@@ -149,7 +149,7 @@ TEST(PiezasTest, gameStateTieTest)
 	obj.dropPiece(3);
 	obj.dropPiece(2);
 	obj.dropPiece(3);
-	ASSERT_TRUE(obj.gameState() == Blank)
+	ASSERT_TRUE(obj.gameState() == Blank);
 }
 
 
