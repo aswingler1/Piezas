@@ -3,7 +3,6 @@
 **/
 
 #include <gtest/gtest.h>
-#include <iostream>
 #include "Piezas.h"
  
 class PiezasTest : public ::testing::Test
@@ -107,7 +106,6 @@ TEST(PiezasTest, dropPieceInFullColumn)
 	Piezas obj;
 	obj.reset();
 
-	std::cout<<obj.dropPiece(2);
 	ASSERT_TRUE(obj.dropPiece(2) == X);
 	ASSERT_TRUE(obj.dropPiece(2) == O);
 	ASSERT_TRUE(obj.dropPiece(2) == X);
