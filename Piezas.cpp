@@ -122,7 +122,7 @@ Piece Piezas::dropPiece(int column)
 		if(GLOBAL_TURN == 'X')
 		{
 			board[1][column] = X;
-			GLOBAL_TURN = 'Y';
+			GLOBAL_TURN = 'O';
 			return X;
 		}
 		else if(GLOBAL_TURN == 'O')
@@ -151,7 +151,7 @@ Piece Piezas::dropPiece(int column)
 	{
 		//switch turns on error
 		if(GLOBAL_TURN == 'X')
-			GLOBAL_TURN = 'Y';
+			GLOBAL_TURN = 'O';
 		else
 			GLOBAL_TURN = 'X';
 
