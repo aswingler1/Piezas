@@ -100,7 +100,7 @@ TEST(PiezasTest, dropPieceOutOfBoundsTest)
 
 }
 
-Test(PiezasTest, dropPieceInFullColumn)
+TEST(PiezasTest, dropPieceInFullColumn)
 {
 
 	Piezas obj;
